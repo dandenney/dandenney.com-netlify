@@ -1,7 +1,7 @@
 :root {
-	--turkey: #FFF0EB;
 	--white: white;
-	--blue: blue;
+	--emperor: #535353;
+	--front-end: #b51f24;
 }
 
 *, *:before, *:after {
@@ -19,7 +19,7 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	background-color: var(--white);
 }
 
 main {
@@ -34,7 +34,7 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+	color: var(--front-end);
 }
 
 a[href]:not(:hover) {
