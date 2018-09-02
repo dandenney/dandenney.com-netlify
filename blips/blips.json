@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/blip.njk",
+  "permalink": "blips/{{ title | slug }}/index.html",
+  "tags": "blips"
+}

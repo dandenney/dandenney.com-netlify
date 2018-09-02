@@ -1,0 +1,20 @@
+<section>
+	{% for blip in blipslist | reverse %}
+		<article{% if blip.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ blip.url | url }}">
+					{% if blip.data.title %}
+						{{ blip.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3> 
+			<p>
+				<time datetime="{{ blip.date | machineDate }}">
+					<small>{{ blip.date | readableDate }} by {{ metadata.author.name }}</small>
+				</time>
+			</p>
+		</article>
+	{% endfor %}
+</section>

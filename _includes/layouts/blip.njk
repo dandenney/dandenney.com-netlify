@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+section: blips
+---
+
+<article>
+  <h1>{{ title }}</h1>
+  <p>
+    <small>
+      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+    </small>
+  </p>
+
+  {{ layoutContent | safe }}
+
+</article>
+
+<nav>
+  <a href="{{ '/blips/' | url }}">← Back to Blips</a>
+</nav>
