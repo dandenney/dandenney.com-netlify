@@ -1,7 +1,8 @@
 ---
 title: A New Adventure
-summary: On joining DataCamp
+summary: On joining DataCamp to build a front-end team
 date: 2017-09-10
+permalink: posts/general/{{ title | slug }}/index.html
 tags:
   - general
 ---
