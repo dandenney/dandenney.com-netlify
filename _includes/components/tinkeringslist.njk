@@ -1,0 +1,20 @@
+<section>
+	{% for tinkering in tinkeringslist | reverse %}
+		<article{% if tinkering.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ tinkering.url | url }}">
+					{% if tinkering.data.title %}
+						{{ tinkering.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3> 
+			<p>
+				<time datetime="{{ tinkering.date | machineDate }}">
+					<small>{{ tinkering.date | readableDate }}</small>
+				</time>
+			</p>
+		</article>
+	{% endfor %}
+</section>

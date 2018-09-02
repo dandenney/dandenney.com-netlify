@@ -10,4 +10,4 @@ tags:
 
 ## Hi! I'm Dan Denney and I'm a front-end developer at DataCamp.
 
-I have been working closely with designers and writing HTML/CSS and JS since 2008ish, and founded [Front-End Conf](http://frontenddesignconference.com) with Cherrie, in 2009. Our friends from [Unmatched Style](http://unmatchedstyle.com) are keeping it going these days.
+I have been working closely with designers and writing HTML/CSS and JS since 2008ish. In 2009, [Cherrie](https://twitter.com/cherriedenney) and I founded [Front-End Conf](http://frontenddesignconference.com), and our friends from [Unmatched Style](http://unmatchedstyle.com) are keeping it going these days.
