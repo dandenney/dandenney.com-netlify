@@ -1,6 +1,7 @@
 :root {
 	--emperor: #535353;
 	--front-end: #b51f24;
+	--mercury: #e4e4e4;
 	--white: white;
 	--white-sand: #f5f5f5;
 }
@@ -140,35 +141,6 @@ main > section > article > * {
 	margin-bottom: .5em;
 }
 
-/* Tags */
-a[rel="tag"],
-a[rel="tag"]:visited {
-	display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-	letter-spacing: .1em;
-  font-size: .625em;
-  padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
-  border-radius: .25em;
-  text-decoration: none;
-	margin: 0 .5em .5em 0;
-}
-
-a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-}
-
-a[rel="tag"]:last-child {
-	margin-right: 0;
-}
-
 /* Contact Form */
 form {
   display: grid;
@@ -203,6 +175,32 @@ button {
 
 img {
 	max-width: 100%;
+}
+
+/* Utilities */
+.dd-u-b-b {
+	border-bottom: 1px solid var(--mercury) !important;
+}
+
+.dd-u-c-white-sand {
+	color: var(--white-sand) !important;
+}
+
+.dd-u-mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.dd-u-ml-8 {
+	margin-left: 8px !important;
+}
+
+
+.dd-u-fx {
+	display: flex !important;
+}
+
+.dd-u-fx-aic {
+	align-items: center !important;
 }
 
 @media screen and (min-width: 600px) {
