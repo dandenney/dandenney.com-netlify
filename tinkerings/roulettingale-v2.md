@@ -71749,6 +71749,7 @@ How does my choice of bets affect the results?
 </div>
 </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//use.typekit.net/yyc6dun.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 <script>
