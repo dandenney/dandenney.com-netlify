@@ -29,16 +29,16 @@ body {
 }
 
 body {
-	display: grid;
-	height: 100vh;
-	grid-template-rows: auto 1fr auto;
+	/* display: grid; */
+	font-size: 18px;
+	/* height: 100vh;
+	grid-template-rows: auto 1fr auto; */
 	background-color: var(--white);
 }
 
 main {
 	animation: fadeIn 0.5s 0.25s forwards ease-in-out;
 	margin: 0 auto;
-	max-width: 37.5em;
 	opacity: 0;
 }
 
@@ -54,7 +54,11 @@ h6 {
 p,
 pre,
 code {
-	line-height: 1.4;
+	line-height: 1.6;
+}
+
+pre {
+	overflow: auto;
 }
 
 a[href],
@@ -67,13 +71,12 @@ a[href]:not(:hover) {
 }
 
 header,
-main,
 footer {
 	padding: 1em;
 }
 
 main {
-	padding-bottom: 2em;
+	padding: 24px;
 }
 
 main :first-child,
@@ -137,6 +140,10 @@ footer nav li a[data-current="current item"] {
 
 footer {
 	border-top: 1px solid var(--white-sand);
+}
+
+.dd-container {
+	max-width: 44em;
 }
 
 /* Posts List */
@@ -240,5 +247,23 @@ img {
 
 	.dd-u-fs-42\@lg {
 		font-size: 42px !important;
+	}
+}
+
+@media screen and (min-width: 920px) {
+	body {
+		display: grid;
+		height: 100vh;
+		grid-template-rows: auto 1fr auto;
+	}
+
+	p,
+	pre,
+	code {
+		line-height: 1.6;
+	}
+
+	.dd-post {
+		font-size: 20px;
 	}
 }
