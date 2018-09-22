@@ -1,6 +1,6 @@
 <section>
 	{% for blip in blipslist | reverse %}
-		<article class="dd-u-b-b" {% if blip.url == url %} data-current="current item"{% endif %}>
+		<article class="dd-u-b-b dd-card dd-card--s" {% if blip.url == url %} data-current="current item"{% endif %}>
 			<h3 class="dd-u-mb-0">
 				<a href="{{ blip.url | url }}">
 					{% if blip.data.title %}
@@ -10,7 +10,7 @@
 					{% endif %}
 				</a>
 			</h3> 
-			<p class="dc-u-mb-0">
+			<p class="dd-u-mb-0">
 				<time datetime="{{ blip.date | machineDate }}">
 					<small>{{ blip.date | readableDate }}</small>
 				</time>

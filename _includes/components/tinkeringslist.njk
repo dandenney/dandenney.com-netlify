@@ -1,6 +1,6 @@
 <section>
 	{% for tinkering in tinkeringslist | reverse %}
-		<article class="dd-u-b-b" {% if tinkering.url == url %} data-current="current item"{% endif %}>
+		<article class="dd-u-b-b dd-card dd-card--s" {% if tinkering.url == url %} data-current="current item"{% endif %}>
 			<h3 class="dd-u-mb-0">
 				<a href="{{ tinkering.url | url }}">
 					{% if tinkering.data.title %}

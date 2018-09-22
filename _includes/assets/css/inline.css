@@ -3,6 +3,7 @@
 	--front-end: #b51f24;
 	--gray: #8e8e8e;
 	--mercury: #e4e4e4;
+	--whisper: #f3f2f7;
 	--white: white;
 	--white-sand: #f5f5f5;
 }
@@ -14,9 +15,29 @@
 @keyframes fadeIn {
 	from {
 		opacity: 0;
+		transform: translateY(2rem);
 	}
 	to {
 		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInShadowS {
+	0% {
+		box-shadow: none;
+	}
+	100% {
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	}
+}
+
+@keyframes fadeInShadow {
+	0% {
+		box-shadow: none;
+	}
+	100% {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 	}
 }
 
@@ -29,17 +50,15 @@ body {
 }
 
 body {
-	/* display: grid; */
+	background-color: var(--whisper);
 	font-size: 18px;
-	/* height: 100vh;
-	grid-template-rows: auto 1fr auto; */
-	background-color: var(--white);
 }
 
 main {
 	animation: fadeIn 0.5s 0.25s forwards ease-in-out;
 	margin: 0 auto;
 	opacity: 0;
+	transform: translateY(2rem);
 }
 
 h1,
@@ -76,7 +95,7 @@ footer {
 }
 
 main {
-	padding: 24px;
+	padding: 12px 24px 24px 24px;
 }
 
 main :first-child,
@@ -195,6 +214,12 @@ img {
 	max-width: 100%;
 }
 
+.dd-card {
+	background-color: var(--white);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	padding: 1rem;
+}
+
 /* Utilities */
 .dd-u-b-b {
 	border-bottom: 1px solid var(--mercury) !important;
@@ -240,13 +265,23 @@ img {
 	}
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:760px) {
 	:root {
 		font-size: 18px;
 	}
 
 	.dd-u-fs-42\@lg {
 		font-size: 42px !important;
+	}
+
+	.dd-card {
+		animation: 1s fadeInShadow 0.5s forwards;
+		box-shadow: none;
+		padding: 2rem;
+	}
+
+	.dd-card--s {
+		animation: 1s fadeInShadowS 0.5s forwards;
 	}
 }
 
@@ -263,7 +298,7 @@ img {
 		line-height: 1.6;
 	}
 
-	.dd-post {
+	.dd-card {
 		font-size: 20px;
 	}
 }
