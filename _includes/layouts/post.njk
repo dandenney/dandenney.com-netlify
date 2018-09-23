@@ -29,3 +29,13 @@ section: post
 <nav>
   <a href="{{ '/posts/' | url }}">← Blog index</a>
 </nav>
+
+{% if codeHighlighting %}
+  {% set js %}
+    {% include "assets/js/highlight.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+{% endif %}
