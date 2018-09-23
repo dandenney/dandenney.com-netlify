@@ -3,6 +3,7 @@ title: See Nick Preprocess
 summary: The launch of Assembling Sass at Code School
 date: 2012-08-15
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

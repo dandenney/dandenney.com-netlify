@@ -3,6 +3,7 @@ title: Sass Color Variable Pop Quiz
 summary: Sharing results from asking when people set variables
 date: 2013-01-21
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

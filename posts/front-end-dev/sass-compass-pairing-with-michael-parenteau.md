@@ -3,6 +3,7 @@ title: Sass and Compass Pairing with Michael Parenteau
 summary: Big thank you to Michael for showing me the ropes
 date: 2012-06-17
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

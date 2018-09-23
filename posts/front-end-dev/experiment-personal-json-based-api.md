@@ -3,6 +3,7 @@ title: Experiment - Personal JSON-based API
 summary: Trying out a way to access a personal bio as an API
 date: 2014-08-30
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

@@ -3,6 +3,7 @@ title: TIL Executing Local Ruby
 summary: Sharing how I learned how to use Ruby to solve a problem 
 date: 2015-11-20
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

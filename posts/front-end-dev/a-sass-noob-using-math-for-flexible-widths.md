@@ -3,6 +3,7 @@ title: A Sass Noob using Math for Flexible Widths
 summary: Sharing as I learn about mixins
 date: 2012-06-18
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

@@ -3,6 +3,7 @@ title: Building a Small PWA with Preact and Firebase
 summary: Sharing how I built a little exercise tracker 
 date: 2017-07-23
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---

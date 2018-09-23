@@ -3,6 +3,7 @@ title: Reducing HTML Email Code
 summary: Sharing how I took a a crack at refactoring an email
 date: 2016-07-16
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
+codeHighlighting: true
 tags:
   - front-end-dev
 ---
