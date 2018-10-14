@@ -28,7 +28,7 @@
 		box-shadow: none;
 	}
 	100% {
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 4px 8px rgba(0, 87, 146, 0.15);
 	}
 }
 
@@ -37,7 +37,7 @@
 		box-shadow: none;
 	}
 	100% {
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 8px 16px rgba(0, 87, 146, 0.15);
 	}
 }
 
@@ -222,7 +222,7 @@ img {
 
 .dd-card {
 	background-color: var(--white);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 8px rgba(0, 87, 146, 0.15);
 	padding: 1rem;
 }
 
