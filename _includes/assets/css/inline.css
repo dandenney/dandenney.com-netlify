@@ -82,11 +82,18 @@ pre {
 
 a[href],
 a[href]:visited {
+	background-color: var(--white-ice);
+	border-bottom: 2px solid var(--white-ice);
 	color: var(--bahama-blue);
+	display: inline-block;
+	margin-bottom: 1px;
+	padding: 1px 4px 0 4px;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
 }
 
-a[href]:not(:hover) {
-	text-decoration: none;
+a[href]:hover {
+	background-color: transparent;
 }
 
 header,
