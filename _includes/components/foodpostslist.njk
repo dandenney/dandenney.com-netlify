@@ -1,0 +1,20 @@
+<section>
+	{% for foodpost in foodpostslist | reverse %}
+		<article class="dd-u-b-b dd-card dd-card--s" {% if foodpost.url == url %} data-current="current item"{% endif %}>
+			<h3 class="dd-u-mb-0">
+				<a href="{{ foodpost.url | url }}">
+					{% if foodpost.data.title %}
+						{{ foodpost.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3> 
+			<p class="dd-u-mb-0">
+				<time datetime="{{ foodpost.date | machineDate }}">
+					<small>{{ foodpost.date | readableDate }}</small>
+				</time>
+			</p>
+		</article>
+	{% endfor %}
+</section>

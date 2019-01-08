@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+section: foodposts
+---
+
+<article class="dd-container dd-card">
+  <h1>{{ title }}</h1>
+  <p>
+    <small>
+      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+    </small>
+  </p>
+
+  {{ layoutContent | safe }}
+
+</article>
+
+<nav>
+  <a href="{{ '/learning-to-cook/' | url }}">← Back to Food Posts</a>
+</nav>
