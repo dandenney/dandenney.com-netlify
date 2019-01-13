@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/foodpost.njk",
+  "permalink": "learning-to-cook/{{ title | slug }}/index.html",
+  "tags": "foodposts"
+}

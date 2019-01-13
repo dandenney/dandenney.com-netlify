@@ -1,0 +1,430 @@
+:root {
+	--emperor: #535353;
+	--bahama-blue: #005792;
+	--gray: #8e8e8e;
+	--mercury: #e4e4e4;
+	--white: white;
+	--white-ice: #faf7f2;
+	--white-sand: #f5f5f5;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInShadowS {
+	0% {
+		box-shadow: none;
+	}
+	100% {
+		box-shadow: 0 1px 2px rgba(226, 209, 181, 0.5);
+	}
+}
+
+@keyframes fadeInShadow {
+	0% {
+		box-shadow: none;
+	}
+	100% {
+		box-shadow: 0 1px 2px rgba(226, 209, 181, 0.5);
+	}
+}
+
+html,
+body {
+	color: var(--emperor);
+	font-family: "canada-type-gibson", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--white-ice);
+  font-size: 18px;
+}
+
+main {
+  animation: fadeIn 0.5s 0.25s forwards ease-in-out;
+  font-family: noto-serif, serif;
+  font-size: 16px;
+  font-weight: 300;
+	margin: 0 auto;
+	opacity: 0;
+	transform: translateY(2rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+h3 {
+	color: var(--white);
+	display: inline-block;
+	left: -0.5rem;
+	margin-bottom: 0;
+	padding: 0.25rem 1rem;
+	position: absolute;
+	top: calc(-1rem + -4px);
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+.dd-instructions-active {
+	border-top: 4px solid #b5be00;
+}
+
+.dd-instructions-active h3 {
+	background: #b5be00;
+	font-size: calc(18px + .25vw);
+}
+
+.dd-instructions-inactive {
+	border-top: 4px solid #786e63;
+}
+
+.dd-instructions-inactive h3 {
+	background: #786e63;
+	font-size: calc(18px + .25vw);
+}
+
+p,
+pre,
+code {
+	line-height: 1.6;
+}
+
+pre {
+	overflow: auto;
+}
+
+a[href],
+a[href]:visited {
+	background-color: var(--white-ice);
+	border-bottom: 2px solid var(--white-ice);
+	color: var(--bahama-blue);
+	display: inline-block;
+	margin-bottom: 1px;
+	padding: 1px 4px 0 4px;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+a[href]:hover {
+	background-color: transparent;
+}
+
+header,
+footer {
+	padding: 1em;
+}	
+
+main :first-child,
+main > article :first-child {
+	margin-top: 0;
+}
+
+pre {
+	font-size: 14px;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	-moz-tab-size: 2;
+	tab-size: 2;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	margin: 0 -1rem;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+ol li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+/* Header Nav */
+header,
+footer {
+	text-align: center;
+}
+
+header {
+	border-bottom: 1px solid var(--white-sand);
+}
+
+header nav ul :first-child,
+footer nav ul :first-child {
+	margin-left: 0;
+}
+
+header nav li,
+footer nav li {
+	display: inline-block;
+	margin: 0 .5em;
+}
+
+header nav li a[href]:not(:hover),
+footer nav li a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+header nav li a[data-current="current item"],
+footer nav li a[data-current="current item"] {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+footer {
+	border-top: 1px solid var(--white-sand);
+}
+
+.dd-container {
+  margin: 0 auto;
+  max-width: 44em;
+  padding: 12px 24px 24px 24px;
+}
+
+.dd-container--lg {
+	max-width: 62.5em;
+}
+
+/* Posts List */
+article {
+	margin: 0 1rem 1rem;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid var(--white);
+}
+
+main > section > article > * {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+img {
+	max-width: 100%;
+}
+
+.dd-card {
+	background-color: var(--white);
+	box-shadow: 0 1px 2px rgba(226, 209, 181, 0.5);
+	padding: 1rem;
+	position: relative;
+}
+
+/* Post */
+
+.dd-title-wrapper {
+  background: linear-gradient(to right, #f1e8d9 0%,#f1e8d9 33%,#faf7f2 33%,#faf7f2 33%,#faf7f2 100%);
+  margin: 2rem 0 2rem -1rem;
+}
+
+.dd-title-container {
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 44em;
+}
+
+.dd-title-container--lg {
+  max-width: 55.555555556em;
+}
+
+.dd-title {
+  background: #f1e8d9;
+  padding: 1rem 2rem 1rem 0;
+}
+
+/* Icon */
+
+.dd-icon-food {
+	display: inline-block;
+	position: relative;
+}
+
+.dd-icon-food--x3 {
+	height: 3rem;
+	width: 3rem;
+}
+
+.dd-icon-food__svg {
+	bottom: 0;
+  display: block;
+  fill: inherit;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+h4 .dd-icon-food {
+	margin-left: -3.5rem;
+}
+
+h4 + ul {
+	margin-top: 0.5rem;
+}
+
+/* Utilities */
+.dd-u-b-b {
+	border-bottom: 1px solid var(--mercury) !important;
+}
+
+.dd-u-c-gray {
+	color: var(--gray) !important;
+}
+
+.dd-u-c-white-sand {
+	color: var(--white-sand) !important;
+}
+
+.dd-u-dib {
+  display: inline-block;
+}
+
+.dd-u-fs-15 {
+  font-size: 1.5rem;
+}
+
+.dd-u-fx {
+	display: flex !important;
+}
+
+.dd-u-ifx {
+	display: inline-flex !important;
+}
+
+.dd-u-fx-aic {
+	align-items: center !important;
+}
+
+.dd-u-mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.dd-u-mr-8 {
+	margin-right: 8px !important;
+}
+
+.dd-u-mt-0 {
+	margin-top: 0 !important;
+}
+
+.dd-u-mt-24 {
+	margin-top: 24px !important;
+}
+
+.dd-u-mt-48 {
+	margin-top: 48px !important;
+}
+
+.dd-u-ml-8 {
+	margin-left: 8px !important;
+}
+
+.dd-u-pl-16 {
+	padding-left: 16px !important;
+}
+
+.dd-u-pr-16 {
+	padding-right: 16px !important;
+}
+
+@media screen and (min-width: 600px) {
+	header {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	header nav {
+		margin-left: 16px;
+	}
+}
+
+@media screen and (min-width:760px) {
+	:root {
+		font-size: 18px;
+	}
+
+	.dd-u-fs-42\@lg {
+		font-size: 42px !important;
+	}
+
+	.dd-card {
+		animation: 1s fadeInShadow 0.5s forwards;
+		box-shadow: none;
+		padding: 2rem;
+	}
+
+	pre {
+		margin: 0 -2rem;
+	}
+
+	.dd-card--s {
+		animation: 1s fadeInShadowS 0.5s forwards;
+	}
+}
+
+@media screen and (min-width: 920px) {
+	p,
+	pre,
+	code {
+		line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: calc(36px + 0.25vw);
+	}
+	
+	h2 {
+    font-size: calc(32px + 0.25vw);
+	}
+	
+	h3 {
+    font-size: calc(28px + 0.25vw);
+	}
+	
+	h4 {
+    font-size: calc(24px + 0.25vw);
+	}
+	
+	h5 {
+    font-size: calc(20px + 0.25vw);
+  }
+
+	.dd-card {
+		font-size: 18px;
+	}
+}
+
