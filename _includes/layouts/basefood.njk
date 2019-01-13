@@ -1,0 +1,21 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/headfood.njk" %}
+
+	<body>
+
+		<header>
+			<img alt="Dan Denney illustration" src="/assets/images/global/dan-denney-avatar.png" width="50" />
+			{% include "components/nav.njk" %}
+		</header>
+
+		<main>
+			{{ layoutContent | safe }}
+		</main>
+
+		{% include "components/footer.njk" %}
+
+	</body>
+
+</html>

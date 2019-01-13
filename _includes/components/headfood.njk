@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or metadata.title }}</title>
+  <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <!-- Typekit -->
+	<script src="https://use.typekit.net/ddg5xff.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet" href="https://use.typekit.net/azp3gna.css">
+  {% set css %}
+    {% include "assets/css/food.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+  {# An optional javascript pipeline; outputs minified JS into <head>
+  {% set js %}
+    {% include "assets/js/inline.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+  #}
+</head>
